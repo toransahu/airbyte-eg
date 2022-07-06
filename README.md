@@ -69,7 +69,11 @@ User=postgres_airbyte_src
 Password=postgres_airbyte_src
 ```
 
+NOTE: 
 
+As airbyte is running on a Docker container & it is expected to establish a TCP connection from container to local/host, then rather than using `127.0.0.1` try use `host.docker.internal`.
+
+Ref: https://docs.docker.com/desktop/networking/#i-want-to-connect-from-a-container-to-a-service-on-the-host
 
 # Setup Destination
 
